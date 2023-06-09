@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.login-section {
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg);
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+}
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+.input-box {
+  display: grid;
+  margin-bottom: 30px;
+}
+.input-box label {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.input-box input {
+  padding: 15px;
+  border: 1px solid white;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+.checkbox input {
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.btn {
+  position: relative;
+}
+.btn input {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn input:hover {
+  color: black;
+}
+.btn::after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+.btn:hover::after {
+  width: 100%;
+}
